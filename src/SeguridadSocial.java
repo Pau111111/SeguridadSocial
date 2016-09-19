@@ -15,6 +15,13 @@ public class SeguridadSocial {
 
     public void altaPersona(Persona persona) {
 
+        boolean repetida=false;
+        for ( Persona personaActual: personasList
+             ) {
+            if(personaActual.getDni().equals(persona.getDni()))
+
+        }
+
     }
 
     public void bajaPersona(String dni) {
