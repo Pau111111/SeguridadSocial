@@ -5,8 +5,17 @@ public class Persona {
     private String numSS;
     private String nombre;
     private String apellidos;
-    private String edad;
-    private int salario;
+    private int edad;
+    private double salario;
+
+    public Persona(String dni, String numSS, String nombre, String apellidos, int edad, double salario) {
+        this.dni = dni;
+        this.numSS = numSS;
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.edad = edad;
+        this.salario = salario;
+    }
 
     public String getDni() {
         return dni;
@@ -40,19 +49,19 @@ public class Persona {
         this.apellidos = apellidos;
     }
 
-    public String getEdad() {
+    public int getEdad() {
         return edad;
     }
 
-    public void setEdad(String edad) {
+    public void setEdad(int edad) {
         this.edad = edad;
     }
 
-    public int getSalario() {
+    public double getSalario() {
         return salario;
     }
 
-    public void setSalario(int salario) {
+    public void setSalario(double salario) {
         this.salario = salario;
     }
 }
