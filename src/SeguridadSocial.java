@@ -15,21 +15,31 @@ public class SeguridadSocial {
 
     public void altaPersona(Persona persona) {
 
-        boolean repetida=false;
+        personasList.add(persona);
+
+       /* boolean repetida=false;
         for ( Persona personaActual: personasList
              ) {
-            if(personaActual.getDni().equals(persona.getDni()))
+            if(personaActual.getDni().equals(persona.getDni()));
+
+        }*/
+
+       boolean repetida=false;
+
+        Persona personaActual:personasList;
+
+        while(persona){
+
 
         }
-
     }
 
     public void bajaPersona(String dni) {
-
+       // personasList.removeIf(persona -> persona.getDni().equals(dni));
     }
 
     public Persona obtenerPersonaPorDNI(String dni) {
-
+        //personasList.get(persona -> persona.getDni().equals(dni));
     }
 
     public Persona obtenerPersonaPorNumSS(String numSS) {
